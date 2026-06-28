@@ -13,9 +13,9 @@ echo "Exporting Annotations..."
 
 unzip -q ${FILE} -d temp
 
-python3 ../Scripts/export-kobo/export-kobo.py temp/KoboReader.sqlite --csv --output ${OUTPUT}/${STAMP}/Annotations.csv
+python ../Scripts/export-kobo/export-kobo.py temp/KoboReader.sqlite --csv --output ${OUTPUT}/${STAMP}/Annotations.csv
 
-python3 ../Scripts/export-kobo/export-kobo.py temp/KoboReader.sqlite --output ${OUTPUT}/${STAMP}/Annotations.txt
+python ../Scripts/export-kobo/export-kobo.py temp/KoboReader.sqlite --output ${OUTPUT}/${STAMP}/Annotations.txt
 
 rm -rf temp
 echo "Done!"
